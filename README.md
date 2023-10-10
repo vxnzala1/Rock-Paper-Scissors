@@ -30,7 +30,7 @@ Simple website that simulates Rock Paper Scissors game.
 
 ## 🚀 Deployment
 
-The website is deployed with GitHub pages and is accessible through the following [link.](git@github.com:vxnzala1/Rock-Paper-Scissors.git)
+The website is deployed with GitHub pages and is accessible through the following [link.](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 <hr>
 <p align="center">
