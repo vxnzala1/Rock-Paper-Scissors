@@ -1,48 +1,67 @@
+<!-- Declara el tipo de documento como HTML -->
 <!DOCTYPE html>
+<!-- Abre el elemento raíz 'html', define el idioma del documento como inglés -->
 <html lang="en">
+    <!-- Abre el elemento 'head', contiene metadatos y enlaces a recursos externos -->
     <head>
+        <!-- Establece la codificación de caracteres del documento -->
         <meta charset="UTF-8">
+        <!-- Establece el título que se mostrará en la pestaña del navegador -->
         <title>Rock, Paper, Scissors</title>
+        <!-- Enlaza una hoja de estilos CSS externa -->
         <link rel="stylesheet" type="text/css" href="./styles.css">
     </head>
 
+    <!-- Abre el elemento 'body', que contiene el contenido visible de la página -->
     <body id="body">
+        <!-- Título del juego -->
         <h1 class="game_title">Rock Paper Scissors</h1>
 
+        <!-- Div para mostrar los resultados y las opciones del juego -->
         <div id="results">
+            <!-- Div para mostrar el resultado actual y el botón de inicio del juego -->
             <div id="result">
+                <!-- Texto de bienvenida -->
                 <div id="result-text">Welcome!</div>
-
+                <!-- Botón para iniciar el juego -->
                 <button type="button" class="button"  id="start_game">Start Game</button>
             </div>
 
-        <div id="choices">
-            <div class="player-info">
-                <div id="user-text">User: 0</div>
-        
-                <div class="choice-box">
-                    <img class="image" src="./assets/images/Rock.png" id="user-img">
+            <!-- Div para mostrar las opciones de los jugadores -->
+            <div id="choices">
+                <!-- Div para mostrar información del usuario -->
+                <div class="player-info">
+                    <!-- Muestra la puntuación del usuario -->
+                    <div id="user-text">User: 0</div>
+                    <!-- Div para mostrar la opción elegida por el usuario -->
+                    <div class="choice-box">
+                        <img class="image" src="./assets/images/Rock.png" id="user-img">
+                    </div>
                 </div>
-            </div>
 
-            <p>VS</p>
+                <!-- Texto para indicar la competencia -->
+                <p>VS</p>
 
-            <div class="player-info">
-                <div id="computer-text">Computer: 0</div>
-
-                <div class="choice-box">
-                    <img class="image" src="./assets/images/Paper.png" id="computer-img">
+                <!-- Div para mostrar información del ordenador -->
+                <div class="player-info">
+                    <!-- Muestra la puntuación del ordenador -->
+                    <div id="computer-text">Computer: 0</div>
+                    <!-- Div para mostrar la opción elegida por el ordenador -->
+                    <div class="choice-box">
+                        <img class="image" src="./assets/images/Paper.png" id="computer-img">
+                    </div>
                 </div>
             </div>
         </div>
-        </div>
 
+        <!-- Div para contener los botones de las opciones del usuario -->
         <div id="button-box">
-            <button type = "button" class="button" id="rock">Rock</button>
-            <button type = "button" class="button" id="paper">Paper</button>
-            <button type = "button" class="button"  id="scissors">Scissors</button>
+            <button type="button" class="button" id="rock">Rock</button>
+            <button type="button" class="button" id="paper">Paper</button>
+            <button type="button" class="button"  id="scissors">Scissors</button>
         </div>
 
+        <!-- Enlaza un archivo de script JavaScript externo -->
         <script type="text/javascript" src="./script.js"></script>
     </body>
 </html>

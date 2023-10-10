@@ -30,9 +30,10 @@ Simple website that simulates Rock Paper Scissors game.
 
 ## 🚀 Deployment
 
-The website is deployed with GitHub pages and is accessible through the following [link.](https://briansuarezsantiago.github.io/Rock-Paper-Scissors/)
+The website is deployed with GitHub pages and is accessible through the following [link.](git@github.com:vxnzala1/Rock-Paper-Scissors.git)
 
 <hr>
 <p align="center">
-Made with ♥️ in Lithuania
+    <img src="./assets/Rock Paper Scissors.gif" alt="Rock Paper Scissors"/>
+    <sub>· Rock Paper Scissors Game ·</sub>
 </p>

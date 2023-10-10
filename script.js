@@ -1,5 +1,7 @@
+//Arreglo con las opciones de juego
 let options = ["ROCK", "PAPER", "SCISSORS"];
 
+//Obtener elementos del DOM
 const rockBtn = document.getElementById("rock");
 const paperBtn = document.getElementById("paper");
 const scissorBtn = document.getElementById("scissors");
@@ -10,13 +12,16 @@ const startBtn = document.getElementById("start_game");
 const usertext = document.getElementById("user-text");
 const computertext = document.getElementById("computer-text");
 
+//Variables para almacenar el puntaje
 let userScore = 0;
 let computerScore = 0;
 
+//Eventos de click para los botones de juego
 rockBtn.addEventListener("click", () => {
     playRound("ROCK");
 });
 
+//Eventos de click para los botones de juego
 paperBtn.addEventListener("click", () => {
     playRound("PAPER");
 });
@@ -25,28 +30,34 @@ scissorBtn.addEventListener("click", () => {
     playRound("SCISSORS");
 });
 
+//Evento de click para el botón de inicio
 startBtn.addEventListener("click", () => {
     start_game();
 });
 
+//Función para iniciar el juego
 function start_game() {
     userScore = 0;
     computerScore = 0;
 
+    //Mostrar botones de juego y ocultar botón de inicio
     rockBtn.style.visibility = 'visible';
     paperBtn.style.visibility = 'visible';
     scissorBtn.style.visibility = 'visible';
     startBtn.style.visibility = 'hidden';
 
+    //Mostrar imágenes de usuario y computadora
     usertext.innerHTML = "Welcome!";
     usertext.innerHTML = "User: " + userScore;
     computertext.innerHTML = "Computer: " + computerScore;
 }
 
+//Función para obtener la elección de la computadora
 function getComputerChoice(options) {
 	return options[Math.floor(Math.random()*3)];
 }
 
+//Función para determinar el ganador de la ronda
 function roundResult(computerChoice,userChoice){
     let computer_win = false;
     let user_win = false;
@@ -84,6 +95,7 @@ function roundResult(computerChoice,userChoice){
     }
 }
 
+//Función para jugar una ronda
 function playRound(userChoice) {
     computerChoice = getComputerChoice(options);
      
