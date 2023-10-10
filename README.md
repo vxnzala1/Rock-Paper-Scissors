@@ -1,4 +1,4 @@
-<a href="https://briansuarezsantiago.github.io/Rock-Paper-Scissors/">
+<a href="https://vxnzala1.github.io/Rock-Paper-Scissors/">
     <img align="right" src="https://img.shields.io/badge/GitHub%20Pages-black.svg?logo=githublogoColor=white" alt="GitHub Pages">
 </a>
 
